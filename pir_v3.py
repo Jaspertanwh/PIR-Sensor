@@ -66,7 +66,7 @@ def sendAlertToSGEMS(sensor_id):
         response = requests.post(url, json=payload, headers=headers)
         response.raise_for_status()  # Raise an exception for HTTP errors
         print(
-            "Lift Emergency Sensor Log has been sent to SGEMS Portal and SGEMS Notifier"
+            "Motion Sensor Log has been sent to SGEMS Portal and SGEMS Notifier"
         )
         return True
     except requests.exceptions.RequestException as e:
